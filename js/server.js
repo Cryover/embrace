@@ -1,11 +1,11 @@
-const mysql = require("mysql");
+const mysql = require("pg");
 
 const connection = mysql.createConnection({
   host: "localhost",
-  user: "root",
+  user: "postgres",
   password: "dorgas784",
-  database: "biblioteca",
-  port: "3306",
+  database: "embrace",
+  port: "5432",
 });
 
 exports.connection = connection;
